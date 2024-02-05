@@ -16,9 +16,792 @@ body {
 }
 
 /* ==================== COMMON ====================*/
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: #494949;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.desc {
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78;
+}
+
+.heading-lv1 {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.heading-lv2 {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.34;
+}
+
+/* ==================== HEADER ====================*/
+header .body {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  position: relative;
+}
+
+header .logo::after {
+  content: ".";
+  position: absolute;
+  left: 105%;
+  bottom: 0;
+  content: "";
+  width: 5.85px;
+  height: 5.958px;
+  border-radius: 50%;
+  background: #192122;
+}
+
+header ul {
+  display: flex;
+}
+
+.menu a {
+  position: relative;
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 39px;
+}
+
+.menu a:hover {
+  text-shadow: 1px 0 0 currentColor;
+  cursor: pointer;
+}
+
+header .action {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.btn.btn-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 24px;
+  width: 108px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+.btn.btn-sign-in:hover {
+  color: var(--primary-color);
+}
+.btn.btn-sign-up:hover {
+  background: var(--primary-color);
+  color: #494949;
+}
+
+/* ==================== Main ====================*/
+.hero .body {
+  display: flex;
+  margin-top: 62px;
+  margin-bottom: 79px;
+  justify-content: space-between;
+}
+
+.hero .text_ele {
+  width: 458px;
+  height: 445px;
+  padding: 93px 0 0 0;
+}
+
+.hero .heading-lv1 {
+  margin-top: 18px;
+}
+
+.hero .desc:first-child {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.hero .desc:last-of-type {
+  width: 82%;
+  margin-right: 32px;
+}
+
+.hero .buttons {
+  display: flex;
+  margin-top: 52px;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero .btn.btn-get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hero .btn.btn-play {
+  border-radius: 50%;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .content {
+  position: relative;
+  background: #34c0c22f;
+}
+
+.hero .card {
+  display: flex;
+  position: absolute;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .card.card1 {
+  justify-content: center;
+  align-items: center;
+  width: 157px;
+  height: 75px;
+  padding: 17px;
+  top: 149px;
+  left: -40px;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero .card1 .icon-book {
+  position: relative;
+  margin-right: 16px;
+  width: 36px;
+  height: 40px;
+  background: #ff8282;
+  border-radius: 4px 2px 2px 4px;
+}
+
+.hero .card1 .icon-book::after {
+  width: 28px;
+  height: 4px;
+  bottom: 8px;
+  right: 4px;
+  border-radius: 2px;
+  position: absolute;
+  display: block;
+  content: "";
+  background: #fff;
+}
+
+.hero .card span {
+  width: 35%;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hero .card.card2 {
+  display: inline-block;
+  text-align: center;
+  bottom: 46px;
+  left: -65px;
+  width: 124px;
+  padding: 16px 25px 23px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .card2 {
+  margin-top: 496px;
+}
+
+.hero .card2 .image1 {
+  margin-top: 16px;
+}
+
+.hero .card2 .image2 {
+  margin-top: 12px;
+}
+
+.hero .card2 .image3 {
+  margin-top: 10px;
+}
+
+.hero .card2 .image4 {
+  margin-top: 16px;
+}
+
+.hero .card.card3 {
+  display: block;
+  bottom: 41px;
+  right: 45px;
+  padding: 17px 35px;
+  margin-top: 17px;
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+}
+
+.hero .card3 .avatar {
+  display: flex;
+  position: relative;
+  margin-top: 8px;
+}
+
+.hero .card3 {
+  justify-content: center;
+  align-items: center;
+  color: #0d1111;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero .avatar .avatar1 {
+  position: absolute;
+  left: 0%;
+  background: #1ebfc1;
+  border-radius: 50%;
+}
+
+.hero .avatar .avatar2 {
+  position: absolute;
+  left: 20%;
+  background: #eaff00;
+  border-radius: 50%;
+}
+
+.hero .avatar .avatar3 {
+  position: absolute;
+  left: 40%;
+  background: #f95700;
+  border-radius: 50%;
+}
+
+.hero .avatar .avatar4 {
+  position: absolute;
+  left: 60%;
+  background: #fb00ff;
+  border-radius: 50%;
+}
+
+.hero .avatar .number-avt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 80%;
+  width: 33px;
+  height: 33px;
+  background: #1ebfc1;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ==================== Features ====================*/
+.features {
+  width: 88%;
+  padding: 130px 135px;
+}
+
+.features .main-content .desc:first-of-type {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.features .heading-lv2 {
+  width: 56%;
+  margin: 18px 0;
+}
+
+.features .desc:nth-of-type(1) {
+  width: 56%;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.features .titles {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .titles .feature {
+  width: 33.33%;
+}
+
+.features .titles .logo {
+  margin-bottom: 26px;
+}
+
+.features .titles .title {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.features .titles .desc:last-of-type {
+  color: #9da6a5;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.69;
+}
+
+.features .titles .desc.desc1 {
+  width: 50%;
+}
+
+.features .titles .desc.desc2 {
+  width: 65%;
+}
+
+.features .titles .desc.desc3 {
+  width: 66%;
+}
+
+/* ==================== Course ====================*/
+.courses {
+  margin: 130px 0;
+}
+.courses .main-content .desc:first-child {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.courses .heading-lv2 {
+  margin-top: 18px;
+  margin-bottom: 19px;
+}
+
+.courses .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses .title .desc:first-child {
+  width: 45%;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78;
+}
+
+.courses .title .view-all {
+  color: #1ebfc1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.courses .title .view-all:hover {
+  color: #000;
+}
+
+.courses .body {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0px;
+  margin: 11px 0px;
+}
+
+.courses .course {
+  position: relative;
+  width: 35.9rem;
+  height: 39.3rem;
+}
+
+.courses .course .img-course {
+  width: 35.9rem;
+  height: 39.3rem;
+  flex-shrink: 0;
+  border-radius: 8px;
+  opacity: 0.35;
+}
+
+.courses .course .card {
+  position: absolute;
+  left: 17px;
+  top: 332px;
+  width: 325px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses .course .card .items {
+  margin: 18px 25px;
+}
+
+.courses .course .card .name-course {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.courses .course .card .price {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.courses .course .card .price span {
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.courses .card .title {
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.courses .info-course {
+  display: flex;
+}
+
+.courses .info-course .title {
+  margin: 18px 10px 11px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses .info-course .title::before {
+  content: "";
+  margin-right: 10px;
+  width: 6px;
+  height: 6px;
+  background: #1ebfc1;
+  border-radius: 50%;
+}
+
+/* ==================== CountDown ====================*/
+.count-down {
+  padding: 124px 0;
+  margin: 10px 0;
+}
+
+.count-down .main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.count-down .main-content .body {
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-down .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.count-down .item .quantity {
+  color: #0d1111;
+  /* text-align: center; */
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.count-down .item .title {
+  color: #767e7e;
+  margin-top: 11px;
+  /* text-align: center; */
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* ==================== Testimonial ====================*/
+.testimonial {
+  padding: 120px 0;
+  margin: 10px 0;
+}
+
+.testimonial .body {
+  display: flex;
+}
+
+.testimonial .body .texts {
+  width: 36%;
+  margin-right: 72px;
+}
+
+.testimonial .texts .title {
+  color: #5d6564;
+  margin-top: 27px;
+  margin-bottom: 33px;
+  font-family: Poppins;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.testimonial .texts .name {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.testimonial .texts .name::before {
+  content: "-";
+  margin-right: 2px;
+}
+
+.testimonial .texts .name::after {
+  content: " student.";
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.testimonial .texts .icon {
+  margin-top: 52px;
+  width: 31%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial .texts .icon-next,
+.testimonial .texts .icon-pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 37px;
+  color: #fff;
+  font-size: 2.6rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2ac9bf;
+}
+
+.testimonial .body .images {
+  display: flex;
+  position: relative;
+}
+
+.testimonial .body .images .avt {
+  position: absolute;
+}
+
+.testimonial .body .images .avt1 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background: orange;
+  top: 229px;
+  left: 0;
+}
+
+.testimonial .body .images .avt2 {
+  width: 92px;
+  height: 92px;
+  border-radius: 92px;
+  background: #2ac9bf;
+  top: -29px;
+  left: 144px;
+}
+
+.testimonial .body .images .avt3 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background: #e613a3;
+  top: 354px;
+  left: 212px;
+}
+
+.testimonial .body .images .avt4 {
+  width: 235px;
+  height: 235px;
+  border-radius: 235px;
+  background: #e75caf;
+  top: 78px;
+  left: 273px;
+}
+
+.testimonial .body .images .avt5 {
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  background: #ee00ff;
+  top: -10px;
+  left: 569px;
+}
+
+.testimonial .body .images .avt6 {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  background: #67d6fb;
+  top: 345px;
+  left: 569px;
+}
+
+/* ==================== CTA ====================*/
+.cta {
+  background: #def6f5;
+  padding: 66px 0;
+  margin: 10px 0;
+}
+
+.cta .main-content {
+  display: flex;
+  gap: 451px;
+  align-items: center;
+}
+
+.cta .heading-lv2 {
+  margin-bottom: 18px;
+}
+
+.cta .btn.btn-get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ==================== FOOTER ====================*/
+footer .body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+
+footer .logo {
+  height: 18px;
+  display: flex;
+  position: relative;
+}
+
+footer .logo::after {
+  display: inline-block;
+  content: ".";
+  position: absolute;
+  left: 105%;
+  bottom: 0;
+  content: "";
+  width: 5.85px;
+  height: 5.958px;
+  border-radius: 50%;
+  background: #192122;
+}
+
+footer ul a {
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer ul a:hover {
+  color: blue;
+}
+
+footer ul li {
+  margin-bottom: 26px;
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer ul li:first-of-type {
+  color: #535353;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+footer ul .icon {
+  display: flex;
+  align-items: center;
+}
+
+footer ul .icon svg {
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+footer .copyright {
+  display: block;
+  margin: 50px 0;
+  color: #b0b5b4;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
